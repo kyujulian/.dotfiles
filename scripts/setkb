@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+#solaar config k380 fn-swap no;
+setxkbmap -layout us,br -option "grp:win_space_toggle" -option "caps:swapescape" &&
+xbindkeys &&
+xmodmap -e "keycode 94 = backslash"

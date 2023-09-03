@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo t9BxA9BAyS44ucd | xclip -selection c;
+ssh tulio@cloud.fflch.usp.br -p 47204;
+

@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+xrandr --auto && 
+xrandr --output HDMI-1-0 --left-of eDP-1 ;
+xset s off -dpms;
