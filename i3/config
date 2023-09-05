@@ -1,4 +1,4 @@
-# i3 config file (v4)
+#i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 #
@@ -174,6 +174,8 @@ bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 assign [class="Opera"]$ws2 
 assign [class="Vivaldi-stable"]$ws2 
 assign [class="obsidian"]$ws1 
+assign [class="VirtualBox Manager"]$ws10 
+
 exec --no-startup-id "workspace:2 ; exec vivaldi-stable"
 exec --no-startup-id "workspace:0 ; exec obsidian"
 
@@ -187,7 +189,7 @@ bindsym Mod4+Shift+b exec --no-startup-id  i3-msg "opera"
 #screenshot print-screen
 bindsym Mod4+backslash exec "deepin-screenshot"
 #setkeyboaard
-bindsym Mod4+Control+K exec "sh ~/scripts/setkb"
+bindsym Mod4+Control+K exec "sh ~/.config/scripts/setkb"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -274,7 +276,7 @@ client.background #2B2C2B
 #######################################################################
 exec picom &
 exec nitrogen --restore &
-exec ~/scripts/setmonitor &
-exec ~/scripts/setkb &
+exec ~/.config/scripts/setmonitor &
+exec ~/.config/scripts/setkb &
 # exec i3-config-wizard
 
